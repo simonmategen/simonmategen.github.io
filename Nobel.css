@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color:#CCC;
+	margin:0;
+	padding:0;
+}
+#storbox{
+	background-color:#FFF;
+	width:1000px;
+	height:940px;
+	margin:auto;
+}
+header{
+	background-color:#285A7A;
+	width:1000px;
+	height:150px;
+	margin:0;
+	padding:0;
+}
+nav{
+	background-color:#587486;
+	width:1000px;
+	height:50px;
+	margin:0;
+	padding:0;
+}
+article{
+	background-color:#FFF;
+	width:800px;
+	height:700px;
+	float:left;
+}
+aside{
+	background-color:#285A7A;
+	width:200px;
+	height:700px;
+	float:left;
+}
+footer{
+	background-color:#587486;
+	width:1000px;
+	height:40px;
+	clear:left;
+	text-align:left;
+	color:#FFF;
+}
+h1{
+	color:#FFF;
+	margin:0;
+	padding:0;
+	font-family:"Times New Roman", Times, serif;
+	font-size:70px;
+	text-align:center;
+}
+h2{
+	font-family:"Times New Roman", Times, serif;
+	font-size:36px;
+	text-align:center;
+}
+h3{
+	font-family:"Times New Roman", Times, serif;
+	font-size:24px;
+	padding-left:10px;
+}
+p{
+	padding-left:10px;
+	font-family:"MS Serif", "New York", serif;
+}
+ul{
+	list-style:none;
+	text-align:center;
+	padding:0;
+	margin:0;
+}
+li{
+	float:left;
+	margin-left:85px;
+	margin-top:10px;
+	font-family:"MS Serif", "New York", serif;
+}
+a:link{
+	text-decoration:none;
+	color:#FFF;
+}
+a:visited{
+	text-decoration:none;
+	color:#FFF;
+}
+a:hover{
+	text-decoration:none;
+	color:#FC3;
+}
+#articleBild{
+	
+	width:300px;
+	height:300px;
+	float:right;
+	margin-right:75px;
+}
+img{
+	width:190px;
+	height:250px;
+	margin:5px;
+}
+h4{
+	text-align:center;
+	color:#FFF;
+}
+.snabbFakta{
+	font-family:"MS Serif", "New York", serif;
+	color:#FFF;
+	padding:5px;
+}
+figcaption{
+	text-align:center;
+}
