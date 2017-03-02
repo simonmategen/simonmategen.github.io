@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+  div {
+    background-image:url(jquery_logo.png);
+    margin: 3px;
+    width: 736px;
+    height: 181px;
+    display: none;
+    float: left;
+}

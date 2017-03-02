@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Inlämmningsuppgift</title>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<link href="inlämmningsUppgift.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <button onclick="fadeInBild()">Fram!</button>
+    <button onclick="fadeOutBild()">Tillbaka!</button>
+    
+    <div></div>
+    
+    <p>Dit tal: <p id="byta">Inget tal</p></p>
+    
+    <button onclick="bytaTal()">Klicka för att byta tal!</button>
+    
+    
+    <script type="text/javascript">
+			var körIgen = 1;
+			
+			var tal = 1;
+			var byta = 0;
+		function fadeInBild()
+		{
+		
+		$ (function() {
+		  $( "div" ).fadeIn( 800, function() {
+			$( "span" ).fadeIn( 100 );
+		  });
+		  return false;
+		});
+		}
+		
+		function fadeOutBild()
+		{
+			$(function() {
+  				$( "div" ).fadeOut( "slow" );
+			});
+		}
+		
+		function bytaTal()
+		{
+		
+			
+			while(körIgen == 1)
+			{
+				byta = parseInt(prompt("Byt tal!","Byt tal här!"));
+    		
+				
+				if(byta % tal == 0)
+				{
+					körIgen = 0;
+				}
+				else
+				{
+					alert("Du skrev inte in ett tal!");
+				}
+			
+			}
+			körIgen = 1;
+			document.getElementById("byta").innerHTML = byta;
+		}
+		
+	
+		
+
+	</script>	
+		
+	
+</body>
+</html>
