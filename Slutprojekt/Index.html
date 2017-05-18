@@ -1,0 +1,132 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Startsida</title>
+    <link href="Index.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="storbox" style="height:100%">
+        <header></header>
+
+        <div class="top">
+            <nav id="menu" class="block">
+                <ul>
+                    <li class="dropdown">
+                    	<a href="Sverige.html" class="dropbtn">Sverige</a>
+                        	<div class="dropdown-content">
+                                <a href="Sverige.html#historia" >Historia</a>
+                                <a href="Sverige.html#natur">Natur</a>
+                                <a href="Sverige.html#språk">Språk och befolkning</a>
+                                <a href="Sverige.html#kultur">Kultur</a>
+                        	</div>
+                    </li>
+                    <li class="dropdown">
+                    	<a href="Danmark.html" class="dropbtn">Danmark</a>
+                        <div class="dropdown-content">
+                            <a href="Danmark.html#historia">Historia</a>
+                            <a href="Danmark.html#natur">Natur</a>
+                            <a href="Danmark.html#språk">Språk och befolkning</a>
+                            <a href="Danmark.html#kultur">Kultur</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Norge</a>
+                        	<div class="dropdown-content">
+                            	<a href="#">Link 1</a>
+                            	<a href="#">Link 2</a>
+                            	<a href="#">Link 3</a>
+                        	</div>
+                    </li>
+                    <li class="dropdown">
+                    	<a href="javascript:void(0)" class="dropbtn">Samarbetet</a>
+                        	<div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                        	</div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="nytt_nav">
+            <div class="ny_meny">
+            	<ul>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Meny≡</a>
+                           <div class="dropdown-content">
+                               <a href="#">Sverige</a>
+                               <a href="#">Norge</a>
+                               <a href="#">Danmark</a>
+                               <a href="#">Samarbetet</a>
+                           </div>
+                     </li>
+                 </ul>
+            </div>
+		</div>
+        <article>
+           <h1>
+                Välkommen
+            </h1>
+             <p id="förord">
+                 Detta är en hemsida som handlar om Skandinavien. Här finns information om de enstaka länderna men också om det sammarbete som pågår mellan länderna för att skapa en större gemensamhet.
+                </p>
+            <p id="förord">
+                Skandinavien är ett geografiskt område i norra Europa som omfattar Danmark och den Skandinaviska halvön med Norge och Sverige.
+            </p>
+                    <div class="picture_carousel">
+                        <img class="mySlides" src="d771d189c5067af5.jpg">
+                        <img class="mySlides" src="finnland-rundreise-seenplatte.jpg">
+                        <img class="mySlides" src="fjord-norge-top.jpg">
+                    </div>
+                <p>
+            </p>
+        </article>
+        <footer>
+        	<p>
+            	<b>Skapad av</b>: Simon Måtegen <b>Email:</b> elev.simon.mategen@skola.lund.se <b>Klass:</b> Te15d
+            </p>
+            
+        </footer>
+
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            var menu = $("#menu");
+
+            window.onscroll = function () {
+                if (document.body.scrollTop > 200) {
+                    menu.addClass("menu-fix-top");
+                } else {
+                    menu.removeClass("menu-fix-top");
+                };
+            };
+
+        });
+
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+		
+    </script>
+</body>
+</html>
