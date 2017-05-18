@@ -103,7 +103,7 @@
             var menu = $("#menu");
 
             window.onscroll = function () {
-                if (document.body.scrollTop > 200) {
+                if (document.documentElement.scrollTop > 200) {
                     menu.addClass("menu-fix-top");
                 } else {
                     menu.removeClass("menu-fix-top");
